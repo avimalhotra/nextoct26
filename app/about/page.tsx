@@ -20,7 +20,7 @@ export const metadata = {
   title: "About US Page",
   description: "A description of my Next.js app",
   openGraph: {
-    title: "My Next.js App",
+    title: "About US Page",
     description: "A description of my Next.js app",
   },
 };
