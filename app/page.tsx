@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Nav";
 import CarsAPI from "@/components/carsapi";
+import FormData from "@/components/FormData";
 
 export default function Home(){
   return (
@@ -14,6 +15,7 @@ export default function Home(){
 
         <CarsAPI></CarsAPI>
 
+        <FormData></FormData>
 
         </main>
         <Footer></Footer>
