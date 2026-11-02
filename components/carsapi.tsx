@@ -9,10 +9,10 @@ export default function CarsAPI(){
      useEffect(()=>{
 
           async function getCars(){
-               // const x=await fetch("/api/cars",{cache:"default"});
+               const x=await fetch("/api/cars",{cache:"default"});
                // const x=await fetch("/api/cars",{cache:"force-cache"});
                // const x=await fetch("/api/cars",{cache:"no-cache"});
-               const x=await fetch("/api/cars",{next:{revalidate:60}});              // 1 min
+               // const x=await fetch("/api/cars",{next:{revalidate:60}});              // 1 min
                const y=await x.json();
                setData(y);
           }

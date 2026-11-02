@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Nav";
-import Link from "next/link";
+
 
 export default function PageNotFound(){
      return (

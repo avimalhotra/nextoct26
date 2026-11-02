@@ -2,6 +2,8 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Nav";
 import Counter from "@/components/Counter";
+import CarsAPI from "@/components/carsapi";
+import { Suspense } from "react";
 
 export default function Contact(){
      return (
@@ -15,6 +17,12 @@ export default function Contact(){
                     <hr className="my-4" />
 
                     <Counter></Counter>
+                    <hr className="my-4"/>
+
+                    <Suspense fallback={<p>Fetching Cars...</p>}>
+                         <CarsAPI></CarsAPI>
+                    </Suspense>
+
                </main>
                <Footer></Footer>
           </div>
